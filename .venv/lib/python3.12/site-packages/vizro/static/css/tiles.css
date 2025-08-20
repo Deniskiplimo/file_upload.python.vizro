@@ -1,0 +1,39 @@
+.table-container,
+.dash-graph {
+  flex: 1 1 auto;
+  overflow: auto;
+  width: 100%;
+}
+
+.figure-title,
+.figure-header,
+.figure-footer {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Needs to deviate from the default as the info-icon could be placed inside */
+.figure-title {
+  align-items: center;
+  flex-direction: row;
+}
+
+.figure-footer {
+  padding-top: 0.75rem;
+}
+
+.figure-footer a {
+  font-size: inherit;
+}
+
+/* Improve footnote of plotly maps */
+.maplibregl-ctrl {
+  display: flex;
+}
+
+/* Fixes flickering scroll-bar when using new plotly maps: https://github.com/mckinsey/vizro/pull/984 */
+.js-plotly-plot {
+  overflow: hidden;
+}

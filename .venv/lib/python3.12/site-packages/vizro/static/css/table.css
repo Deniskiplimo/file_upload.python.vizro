@@ -1,0 +1,49 @@
+#dashboard-container .dash-cell {
+  height: 3rem !important;
+}
+
+#dashboard-container .dash-spreadsheet-inner th {
+  background-color: inherit;
+  color: var(--text-primary);
+  padding: 10px 12px;
+}
+
+#dashboard-container .dash-spreadsheet-inner td {
+  background-color: inherit;
+  color: var(--text-primary);
+  padding: 10px 12px;
+}
+
+#dashboard-container .dash-spreadsheet-inner table {
+  --hover: inherit;
+}
+
+#dashboard-container
+  .dash-table-container
+  .dash-spreadsheet-container
+  .dash-spreadsheet-inner
+  table {
+  font-family: inter, sans-serif, Arial, serif;
+}
+
+/* Styling for pagination element */
+#dashboard-container .first-page,
+#dashboard-container .previous-page,
+#dashboard-container .next-page,
+#dashboard-container .last-page {
+  background: inherit;
+  color: var(--text-secondary);
+}
+
+#dashboard-container input.current-page,
+.table-container input.current-page::placeholder {
+  background: inherit;
+  color: var(--text-primary) !important;
+}
+
+#dashboard-container button.first-page:hover,
+#dashboard-container button.previous-page:hover,
+#dashboard-container button.next-page:hover,
+#dashboard-container button.last-page:hover {
+  color: var(--text-primaryHover) !important;
+}
